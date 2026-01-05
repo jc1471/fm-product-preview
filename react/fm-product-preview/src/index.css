@@ -1,0 +1,33 @@
+:root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  /* Colours */
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Font face */
+/*
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  letter-spacing: 2px;
+}
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+}
