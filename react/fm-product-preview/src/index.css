@@ -16,18 +16,136 @@
   box-sizing: border-box;
 }
 
-/* Font face */
-/*
-@font-face {
-  font-family: "Hanken Grotesk";
-  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
-  font-style: normal;
-  letter-spacing: 2px;
+html {
+  font-size: 14px;
 }
-*/
 
 body {
   margin: 0;
   padding: 0;
-  background-color: yellow;
+  height: 100%;
+  background-color: var(--Cream);
+  font-family: "Montserrat", "Fraunces";
+}
+
+.parent-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+.image-section {
+  max-height: 30vh;
+
+}
+*/
+
+.product-image {
+  height: auto;
+  max-height: 45vh;
+  width: auto;
+  max-width: 90vw;
+  margin-top: 2.5vh;
+  border-radius: 3% 3% 0 0;
+  object-fit: cover;
+}
+
+.info-section {
+  width: 70vw;
+  height: 40vh;
+  margin-top: 2.5vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-name {
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: var(--Grey);
+  margin-block: 0;
+}
+
+.product-name {
+  font-family: "Fraunces";
+  font-size: 1.8rem;
+  margin-block: 0;
+}
+
+.product-description {
+  font-weight: 400;
+  color: var(--Grey);
+  font-size: 0.8rem;
+  margin-block: 0;
+}
+
+.price-section {
+  font-family: "Fraunces";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0;
+}
+
+button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--Green-500);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  border: none;
+}
+
+.sale-price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 5vw;
+  margin-block: 0.5rem;
+  color: var(--Green-500);
+}
+
+.original-price {
+  font-style: strikethrough;
+  color: var(--Grey);
+  font-size: 0.75rem;
+}
+
+.cart-image {
+  height: 50%;
+  width: auto;
+}
+
+.add-to-cart {
+  color: var(--White);
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+/*Desktop View */
+@media (min-width: 480px) {
+
+  html {
+    font-size: 26px;
+  }
+
+  .parent-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .product-image {
+    width: 45vw;
+    height: auto;
+  }
+
+  .info-section {
+    width: 45vw;
+  }
 }
