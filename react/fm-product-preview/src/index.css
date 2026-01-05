@@ -103,6 +103,10 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: var(--Green-700);
+}
+
 .sale-price {
   font-size: 2rem;
   font-weight: 600;
@@ -112,7 +116,7 @@ button {
 }
 
 .original-price {
-  font-style: strikethrough;
+  text-decoration:line-through;
   color: var(--Grey);
   font-size: 0.75rem;
 }
